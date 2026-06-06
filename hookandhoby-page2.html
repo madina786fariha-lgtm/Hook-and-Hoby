@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="UTF-8">
+<title>Hook & Hoby page2</title>
+
+<style>
+
+body{
+    font-family: Georgia, serif;  
+    background-color:#fff9fc;
+    color:#444;                 
+    border: 8px dotted #7a4e74;
+    padding: 30px;
+    margin: 30px;
+    
+
+}
+
+
+header{
+    background:linear-gradient(to right,#f8c8dc,#d7f5e6);
+    text-align:center;
+    padding:60px;
+    border-bottom:4px solid #f5a9c8;  }
+
+header h1{
+    font-size:56px;
+    color:#7a4e74;
+    margin:0;
+}
+
+header p{
+    font-size:23px;
+}
+
+table{
+    margin:auto;
+    border-collapse:collapse;
+    width:80%;
+    margin-top:48px;
+    margin-bottom:48px;
+
+    
+}
+
+th{
+    background:#f5a9c8;
+    color:white;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:12px;
+}
+
+.contact{
+    background:#fdf1f6;
+    padding:30px;
+}
+
+.contact h2{
+    color:#7a4e74;
+}
+
+input,textarea,select{
+    width:40%;
+    padding:10px;
+    margin:8px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+button{
+    background:#f5a9c8;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#d889ad;
+}
+
+footer{
+    background:#7a4e74;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+.box
+{ background:white;
+    padding:20px;
+    width:70%;
+    margin:auto;
+    border-radius:15px;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1><font size="100">   Place Your Order </font> </h1>
+</header>
+
+
+<table><caption align="top"> <font size="7"><div class="box">
+🌸Products We Sell🌸</div> </font></caption>
+<tr>
+<th>Item no</th>
+<th>Category</th>
+<th>Name</th>
+<th>Price</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Hair Accessories</td>
+<td> Gajra</td>
+<td>₹800</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Hair Accessories</td>
+<td> bow rubberband</td>
+<td>₹150</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Hair Accessories</td>
+<td> crochet clip</td>
+<td>₹200</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Hair Accessories</td>
+<td> crocet rubberband</td>
+<td>₹170</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>Keychain and charms</td>
+<td> sunflower charm</td>
+<td>₹80</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>Keychain and charms</td>
+<td> heart keychain</td>
+<td>₹145</td>
+</tr>
+
+
+<tr>
+<td>7</td>
+<td>Keychain and charms</td>
+<td> rose keychain</td>
+<td>₹100</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>Keychain and charms</td>
+<td> coffe keychin</td>
+<td>₹170</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>flower</td>
+<td> rose flower</td>
+<td>₹160</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>flower</td>
+<td> tulip flower</td>
+<td>₹160</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td>flower</td>
+<td> sunflower pot</td>
+<td>₹400</td>
+</tr>
+
+
+<tr>
+<td>12</td>
+<td>flower</td>
+<td> mini flower bouquet</td>
+<td>₹500</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td>flower</td>
+<td> rose and tulip buquet</td>
+<td>₹550</td>
+</tr>
+</table>
+<center>
+
+<div class="contact" >
+<div class="box">
+
+<P><font size="10"> 🌸Order Details🌸 </font> </p>
+</div>
+<h2> Select Category </h2>
+<select >
+<option> select category</option>
+<option> Hair acessories</option>
+<option>Keychain and charms Star</option>
+<option>Flower</option>
+</select>
+
+
+<h2> Select Item </h2>
+<select>
+<option> Items</option>
+<option> Gajra</option>
+<option> bow rubberband</option>
+<option> crochet clip</option>
+<option> crocet rubberband</option>
+<option> sunflower charm</option>
+<option> heart keychain</option>
+<option> rose keychain</option>
+<option>  coffe keychin</option>
+<option> rose flower </option>
+<option> tulip flower </option>
+<option> sunflower pot </option>
+<option> mini flower bouquet</option>
+<option> rose and tulip buquet </option>
+</select>
+
+
+<h2>  Enter Quantity</h2>
+<input type="number">
+
+
+<h2> Dilevery Address </h2>
+
+<textarea rows="5" placeholder="Write your dilevery address"></textarea>
+
+
+
+
+<h2>Price Calculator</h2>
+<h4>Discount Calculator</h4>
+
+Enter Price:
+<input type="number" id="amount">
+
+<button onclick="discount()">
+Calculate
+</button>
+
+<p id="discountResult"></p>
+
+<script>
+
+   function discount()
+{
+    var amount =
+    parseFloat(document.getElementById("amount").value);
+
+    if(amount > 1000)
+    {
+        var discountAmount = amount * 0.10;
+        var finalPrice = amount - discountAmount;
+
+        document.getElementById("discountResult").innerHTML =
+        "Discount = ₹" + discountAmount +
+        "<br>Final Price = ₹" + finalPrice;
+    }
+    else
+    {
+        document.getElementById("discountResult").innerHTML =
+        "No discount available. Purchase must be above ₹1000.";
+    }
+}
+
+function confirmation()
+{alert("Your order is placed successfully");
+}
+
+</script>
+<button onclick="confirmation()">
+Place Your Order
+</button>
+
+</div>
+
+<footer>
+
+<p>© 2025 Hook & Hoby |  Hanmade creations </p>
+
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
